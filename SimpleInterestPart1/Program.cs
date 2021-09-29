@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace SimpleInterestPart1
 {
+    /// <summary>
+    /// Using Delegates and Events
+    /// </summary>
+    
+
     delegate void interestDelegate();
     class Program
     {
