@@ -28,11 +28,34 @@ namespace ExceptionHandling3
             index[9] = 4;
 
             //to see the number on selected index
-
+            int a = 0;
             Console.WriteLine("Input index num you would like to see");
-            int a = Int32.Parse(Console.ReadLine());
+            try
+            {
+                a = Int32.Parse(Console.ReadLine());
+            }
+            catch(FormatException ex)
+            {
+                Console.WriteLine("Unable to" + ex);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Unable" + ex);
+            }
 
-            Console.WriteLine(index[a]);
+            try
+            {
+                Console.WriteLine(index[a]);
+            }
+            catch(IndexOutOfRangeException ex)
+            {
+                Console.WriteLine("Unable to" +ex);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Unable" + ex);
+            }
+
 
             //to set new number
 
@@ -41,8 +64,17 @@ namespace ExceptionHandling3
 
             Console.WriteLine("Input a new number..");
             int c = Int32.Parse(Console.ReadLine());
-            index[b] = c;
-            Console.WriteLine("new number in selected index: " + c);
+            try
+            {
+                index[b] = c;
+                Console.WriteLine("new number in selected index: " + c);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Unable to" + ex);
+            }
+           
+            
 
             Console.ReadLine();
 
