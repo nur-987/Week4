@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling3", "Excep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInterestPart1", "SimpleInterestPart1\SimpleInterestPart1.csproj", "{879A0554-A82F-44A9-9A38-73FE1ACFE4A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryCatchFinally", "TryCatchFinally\TryCatchFinally.csproj", "{01B37BF7-AA07-4ACB-8068-9E9D1CEAAAEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{879A0554-A82F-44A9-9A38-73FE1ACFE4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{879A0554-A82F-44A9-9A38-73FE1ACFE4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{879A0554-A82F-44A9-9A38-73FE1ACFE4A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01B37BF7-AA07-4ACB-8068-9E9D1CEAAAEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B37BF7-AA07-4ACB-8068-9E9D1CEAAAEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B37BF7-AA07-4ACB-8068-9E9D1CEAAAEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B37BF7-AA07-4ACB-8068-9E9D1CEAAAEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
