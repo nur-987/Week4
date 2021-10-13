@@ -21,9 +21,28 @@ namespace ExceptionHandling2
             Console.WriteLine("Welcome to stack application");
             while (b)
             {
+                int input = 0;
                 Console.WriteLine("What would you like to do?");
                 Console.WriteLine("1) Add numbers       2) Take away numbers    3)Display All   4)Quit");
-                int input = Int32.Parse(Console.ReadLine());
+                try
+                {
+                    input = Int32.Parse(Console.ReadLine());
+                }
+                catch(FormatException ex)
+                {
+                    Console.WriteLine("unable to perform action");
+                    Console.WriteLine($"{ex.Message}");
+                }
+                catch (ArgumentNullException ex)
+                {
+                    Console.WriteLine("unable to perform action");
+                    Console.WriteLine($"{ex.Message}");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("unable to perform action");
+                    Console.WriteLine($"{ex.Message}");
+                } 
 
                 if (input == 1)
                 {
